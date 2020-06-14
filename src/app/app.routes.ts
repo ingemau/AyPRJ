@@ -7,11 +7,6 @@ import { NopageComponent } from './shared/nopage/nopage.component';
 import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
-    {path: '', component: PagesComponent, children: [
-        {path: 'home', component: HomeComponent},
-        {path: 'progres', component: ProgresComponent},
-        {path: '', redirectTo: '/home', pathMatch: 'full'}
-    ]},
     {path: 'login', component: LoginComponent},
     {path: '**', component: NopageComponent}
 ];
